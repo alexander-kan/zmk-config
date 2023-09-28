@@ -25,32 +25,5 @@
                   &kp ENTER &mo 1 &kp LCMD   &kp SPACE &kp BSPC &mo 2 
                         >;
                 };
-                lower_layer {
-// -----------------------------------------------------------------------------------------
-// |  F1  |    F2   |    F3    |    F4    |    F5    |    F6    |   |   F7  |   F8  |   F9  |  F10 |  F11 | F12   |
-// | LCTRL|    !    |     @    |     #    |     $    |     %    |   | CARET | EQUAL | ASTRK | LPAR | RPAR | TILDE |
-// | LSHFT | BT_CLR | BT_SEL 0 | BT_SEL 1 | BT_SEL 2 | BT_SEL 3 |   |  AMPS | UNDER | PLUS  | LBRC | RBRC | PIPE  |
-//                             |   LCMD   |          |    SPC   |   |  ENT  |       | RALT  |
-                        bindings = <
-   &kp F1    &kp F2     &kp F3       &kp F4       &kp F5       &kp F6         &kp F7    &kp F8    &kp F9    &kp F10  &kp F11  &kp F12
-   &kp LCTRL &kp EXCL   &kp AT       &kp HASH     &kp DLLR     &kp PRCNT      &kp CARET &kp EQUAL &kp ASTRK &kp LPAR &kp RPAR &kp TILDE
-   &kp LSHFT &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3   &kp AMPS  &kp UNDER &kp PLUS  &kp LBRC &kp RBRC &kp PIPE
-                                     &kp LCMD     &trans       &kp SPACE      &kp ENT   &trans    &kp RALT
-                        >;
-                };
-
-                raise_layer {
-// -----------------------------------------------------------------------------------------
-// |  TAB |  N1  |  N2  |  N3  |  N4  |  N5  |   |  N6 |  N7  |  N8  |  N9  |  N0   | LBKT |
-// |  F1  |  F2  |  F3  |  F4  |  F5  |  F6  |   |  -  | LEFT |  UP  | DOWN | RIGHT | NUBS |
-// |  F7  |  F8  |  F9  |  F10 |  F11 |  F12 |   |  +  |   -  |  =   |   [  |   ]   |  ~   |
-//                      | LCMD |     | SPACE |   | ENT |      | RALT |
-                        bindings = <
-   &kp TAB &kp N1 &kp N2 &kp N3  &kp N4  &kp N5    &kp N6    &kp N7    &kp N8    &kp N9   &kp N0    &kp LBKT
-   &kp F1  &kp F2 &kp F3 &kp F4  &kp F5  &kp F6    &kp MINUS &kp LEFT  &kp UP    &kp DOWN &kp RIGHT &kp NUBS
-   &kp F7  &kp F8 &kp F9 &kp F10 &kp F11 &kp F12   &kp PLUS  &kp MINUS &kp EQUAL &kp LBKT &kp RBKT  &kp TILDE
-                       &kp LCMD &trans &kp SPACE   &kp ENTER   &trans    &kp RALT
-                        >;
-                };
         };
 };
